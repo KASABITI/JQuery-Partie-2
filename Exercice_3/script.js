@@ -1,0 +1,10 @@
+$(document).ready(function(){
+    $("#afficher").click(function(){
+        $("#texte").show();
+    })
+})
+$(document).ready(function(){
+    $("#cacher").click(function(){
+        $("#texte").hide();
+    })
+})
