@@ -1,10 +1,9 @@
 $(document).ready(function(){
-    $("#afficher").click(function(){
-        $("#texte").show();
-    })
-})
-$(document).ready(function(){
     $("#cacher").click(function(){
-        $("#texte").hide();
-    })
-})
+      //Dans cet example, la méthode toggle sert à basculer de "cacher" à "afficher".
+      $("div").toggle();
+    });
+  });
+     
+
+    

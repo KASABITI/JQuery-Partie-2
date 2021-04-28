@@ -1,22 +1,11 @@
-$(document).ready(function(){
-    $("#green").mouseenter(function(){
-        $("#texte").css("color","green");
-    });
-    $("#green").mouseleave(function(){
-        $("#texte").css("color","");
-    });
-    $("#red").mouseenter(function(){
-        $("#texte").css("color","red");
-    });
-    $("#red").mouseleave(function(){
-        $("#texte").css("color","");
-    });
-    $("#blue").mouseenter(function(){
-        $("#texte").css("color","blue");
-    });
-    $("#blue").mouseleave(function(){
-        $("#texte").css("color","");
-    });
+ $(document).ready(function() {
+    $("#red, #blue, #green").mouseenter(function () {
+        var divColor = $(this).attr('id');
+        $("#text").css("color", divColor);
+      });
     
-    });
+      $("#red, #blue, #green").mouseout(function(){
+       $("#text").css("color", "black");
+      });
     
+     });
